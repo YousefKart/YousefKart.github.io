@@ -19,11 +19,13 @@ nav{
     /* border: 1px solid green; */
     height: 100%;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-list li a{
     /* border: 1px solid blue; */
     text-decoration: none;
-    padding: 15px 20px;
-    float: right;
+    margin: 0 1.75rem;
 }
