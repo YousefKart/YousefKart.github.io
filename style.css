@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+nav{
+    /* border: 1px solid red; */
+    height: 60px;
+    border-bottom: 1px solid white;
+}
+
+.navbar-list{
+    /* border: 1px solid green; */
+    height: 100%;
+    list-style: none;
+}
+
+.navbar-list li a{
+    /* border: 1px solid blue; */
+    text-decoration: none;
+    padding: 15px 20px;
+    float: right;
+}
