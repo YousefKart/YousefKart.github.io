@@ -1,12 +1,18 @@
+:root {
+    --secondary-color: #1A2D38;
+    --primary-color: #2E5266;
+    --tertiary-color: #EBEBEB;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.25rem;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 h2 {
@@ -14,10 +20,34 @@ h2 {
     padding: 20px;
 }
 
-nav{
+.link {
+    /* border: 1px solid green; */
+    text-decoration: none;
+    text-align: center;
+}
+
+.section {
+    /* border: 1px solid blue; */
+    width: 60%;
+    text-align: center;
+}
+
+nav {
     /* border: 1px solid red; */
     height: 60px;
-    border-bottom: 1px solid white;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--tertiary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+}
+
+.navbar-part,
+.navbar-part a {
+    background-color: var(--secondary-color);
 }
 
 .navbar-list{
@@ -37,20 +67,50 @@ nav{
 
 main {
     /* border: 1px solid yellow; */
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#projects ul{
+
+#project-list{
     /* border: 1px solid red; */
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 10%;
+}
+
+#project-list li{
+    /* border: 2px solid blue; */
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    height: 40vh;
+    margin: 40px 0px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-#projects ul li a {
+#project-list li img{
     /* border: 1px solid green; */
-    text-decoration: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#project-list li a{
+    /* border: 1px solid red; */
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 20px;
 }
