@@ -1,6 +1,6 @@
 :root {
-    --secondary-color: #1A2D38;
     --primary-color: #2E5266;
+    --secondary-color: #1A2D38;
     --tertiary-color: #EBEBEB;
 }
 
@@ -13,6 +13,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.25rem;
     opacity: 1;
+}
+
+body {
+    background-color: var(--secondary-color);
 }
 
 h2 {
