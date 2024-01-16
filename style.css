@@ -42,7 +42,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
     opacity: 1;
 }
 
@@ -71,6 +71,115 @@ main {
     align-items: center;
 }
 
+#skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    column-gap: 10%;
+}
+
+#skills-list > li {
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    height: 24rem;
+    margin: 40px 0px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px var(--secondary-color);
+}
+
+#skills-list p {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+#skills-list > li > p {
+    font-size: 1.35rem;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.skill-sub-list {
+    background-color: var(--tertiary-color);
+    height: 80%;
+    margin-top: 10%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.skill-sub-list li {
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    background-color: var(--tertiary-color);
+    display: inline-flex;
+    width: 60%;
+}
+
+.skill img {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    height: 32px;
+    width: 32px;
+}
+
+@media screen and (max-width: 1600px) {
+    .skill {
+        width: 100%;
+    }
+    .skill-sub-list p {
+        display: none;
+    }
+}
+
+.skill-wrapper {
+    background-color: var(--tertiary-color);
+    width: 100%;
+}
+
+.skill-bar {
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    border-radius: 14px;
+    height: 28px;
+    width: 95%;
+    margin-left: 5%;
+    position: relative;
+    z-index: 10;
+}
+
+.skill-level {
+    background-color: var(--primary-color);
+    border-radius: 14px;
+    height: calc(100% - 4px);
+    width: calc(95% - 2px);
+    position: relative;
+    top: -28px;
+    margin-left: 5%;
+    z-index: 9;
+}
+
+.skill-level-1 {
+    width: 55%;
+}
+
+.skill-level-2 {
+    width: 65%;
+}
+
+.skill-level-3 {
+    width: 75%;
+}
+
+.skill-level-4 {
+    width: 85%;
+}
 
 #project-list {
     list-style: none;
@@ -114,108 +223,4 @@ main {
     #project-list {
         grid-template-columns: 1fr;
     }
-}
-
-#skills-list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    column-gap: 10%;
-}
-
-#skills-list > li {
-    background-color: var(--tertiary-color);
-    border-radius: 10px;
-    height: 24rem;
-    margin: 40px 0px;
-    padding: 20px;
-    box-shadow: 10px 10px 10px var(--secondary-color);
-}
-
-#skills-list li p {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-    font-size: 1.35rem;
-}
-
-.skill-sub-list {
-    background-color: var(--tertiary-color);
-    height: 80%;
-    margin-top: 10%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.skill-sub-list li {
-    background-color: var(--tertiary-color);
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill {
-    background-color: var(--tertiary-color);
-    display: inline-flex;
-    width: 60%;
-}
-
-.skill img {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-    height: 32px;
-    width: 32px;
-}
-
-.skil-sub-list p {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-}
-
-@media screen and (max-width: 1600px) {
-    .skill {
-        width: 100%;
-    }
-    .skill-sub-list p {
-        display: none;
-    }
-}
-
-.skill-bar {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--tertiary-color);
-    border-radius: 14px;
-    height: 28px;
-    width: 90%;
-    margin-left: 5%;
-    position: relative;
-    z-index: 10;
-}
-
-.skill-level {
-    background-color: var(--primary-color);
-    border-radius: 14px;
-    height: calc(100% + 2px);
-    width: calc(100% + 2px);
-    position: relative;
-    top: -1px;
-    left: -1px;
-    z-index: 9;
-}
-
-.skill-level-1 {
-    width: 60%;
-}
-
-.skill-level-2 {
-    width: 70%;
-}
-
-.skill-level-3 {
-    width: 80%;
-}
-
-.skill-level-4 {
-    width: 90%;
 }
