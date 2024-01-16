@@ -24,6 +24,10 @@ h2 {
     padding: 20px;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 .link {
     text-decoration: none;
     text-align: center;
@@ -69,6 +73,52 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.home-list {
+    list-style: none;
+}
+
+#home-info {
+    height: 400px;
+    position: relative;
+    left: calc(50% - 150px);
+}
+
+#home-info > li {
+    display: flex;
+    height: 100px;
+    width: 300px;
+}
+
+#home-info > li > p {
+    position: relative;
+    top: 65%;
+    left: 10%;
+    font-size: 1.5rem;
+}
+
+.home-list-bubble {
+    border: 4px solid var(--tertiary-color);
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    position: relative;
+    top: 70px;
+    transition: 100ms;
+}
+
+.home-list-bubble:hover {
+    background-color: var(--tertiary-color);
+}
+
+.home-list-connector {
+    background-color: var(--tertiary-color);
+    height: 78px;
+    width: 4px;
+    position: relative;
+    left: 11px;
+    top: -32px;
 }
 
 #skills-list {
