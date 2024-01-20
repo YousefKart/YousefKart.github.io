@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #2E5266;
-    --secondary-color: #1A2D38;
+    --primary-color: #3591c2;
+    --secondary-color: #2573a0;
     --tertiary-color: #EBEBEB;
 }
 
@@ -152,7 +152,7 @@ main {
 
 .skill-sub-list {
     background-color: var(--tertiary-color);
-    height: 80%;
+    height: 70%;
     margin-top: 10%;
     list-style: none;
     display: flex;
@@ -179,25 +179,18 @@ main {
     width: 32px;
 }
 
-@media screen and (max-width: 1600px) {
-    .skill {
-        width: 100%;
-    }
-    .skill-sub-list p {
-        display: none;
-    }
-}
-
 .skill-wrapper {
     background-color: var(--tertiary-color);
+    height: 20px;
     width: 100%;
+    margin-top: 6px;
 }
 
 .skill-bar {
     border: 2px solid var(--secondary-color);
     background: transparent;
-    border-radius: 14px;
-    height: 28px;
+    border-radius: 10px;
+    height: 100%;
     width: 95%;
     margin-left: 5%;
     position: relative;
@@ -206,11 +199,11 @@ main {
 
 .skill-level {
     background-color: var(--primary-color);
-    border-radius: 14px;
-    height: calc(100% - 4px);
+    border-radius: 10px;
+    height: calc(100% - 2px);
     width: calc(95% - 2px);
     position: relative;
-    top: -28px;
+    top: calc(-100% + 1px);
     margin-left: 5%;
     z-index: 9;
 }
@@ -229,6 +222,24 @@ main {
 
 .skill-level-4 {
     width: 85%;
+}
+
+@media screen and (max-width: 1600px) {
+    #skills-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skill {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .skill {
+        width: 100%;
+    }
+    .skill-sub-list p {
+        display: none;
+    }
 }
 
 #project-list {
