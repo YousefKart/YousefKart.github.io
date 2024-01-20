@@ -112,7 +112,7 @@ nav {
     }
 
     #background-image {
-        height: 1000px;
+        height: 1020px;
         width: 100%;
         left: 0;
     }
@@ -242,7 +242,7 @@ main {
 
 @media screen and (max-width: 1000px) {
     h1.menu {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     #menu-list {
