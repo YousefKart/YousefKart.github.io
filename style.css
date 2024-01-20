@@ -115,10 +115,8 @@ main {
     transition-duration: 100ms;
 }
 
-.home-list > li:hover {
-    .home-list-bubble {
-        background-color: var(--tertiary-color);
-    }
+.home-list > li:hover .home-list-bubble{
+    background-color: var(--tertiary-color);
 }
 
 
@@ -273,6 +271,9 @@ main {
     .skill-sub-list p {
         display: none;
     }
+    .skill-wrapper {
+        width: 90%;
+    }
 }
 
 #project-list {
@@ -295,6 +296,10 @@ main {
 
 #project-list a:hover {
     transform: scale(1.05);
+}
+
+#project-list a:hover p {
+    color: var(--quinary-color);
 }
 
 #project-list img {
@@ -322,4 +327,32 @@ main {
     #project-list {
         grid-template-columns: 1fr;
     }
+}
+
+#contact * {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+#contact {
+    background-color: var(--tertiary-color);
+    width: 100%;
+}
+
+#contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#contact-list li {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-list li img {
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
 }
