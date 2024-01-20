@@ -2,6 +2,8 @@
     --primary-color: #3591c2;
     --secondary-color: #2573a0;
     --tertiary-color: #EBEBEB;
+    --quaternary-color: #ffd035;
+    --quinary-color: #ff9f35;
 }
 
 * {
@@ -66,6 +68,11 @@ nav {
 .navbar-list li a{
     text-decoration: none;
     margin: 0 1.75rem;
+    transition: 100ms;
+}
+
+.navbar-list li a:hover{
+    color: var(--quaternary-color);
 }
 
 main {
@@ -108,9 +115,12 @@ main {
     transition: 100ms;
 }
 
-.home-list-bubble:hover {
-    background-color: var(--tertiary-color);
+.home-list > li:hover {
+    .home-list-bubble {
+        background-color: var(--tertiary-color);
+    }
 }
+
 
 .home-list-connector {
     background-color: var(--tertiary-color);
@@ -164,6 +174,22 @@ main {
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
+}
+
+#skills-list .skill-sub-list li p{
+    transition: 100ms;
+}
+
+#skills-list .skill-sub-list li:hover p{
+    color: var(--quinary-color);
+}
+
+#skill-list-programming-languages {
+    grid-column: span 2;
+}
+
+#skill-list-programming-languages .skill-sub-list {
+    margin-top: 5%;
 }
 
 .skill {
@@ -226,8 +252,15 @@ main {
 
 @media screen and (max-width: 1600px) {
     #skills-list {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
+    #skill-list-programming-languages {
+        grid-column: span 1;
+    }
+    #skill-list-programming-languages .skill-sub-list {
+        margin-top: 10%;
+    }
+    
     .skill {
         width: 70%;
     }
@@ -250,16 +283,21 @@ main {
     column-gap: 10%;
 }
 
-#project-list li {
+#project-list a {
     background-color: var(--tertiary-color);
     border-radius: 10px;
     height: 18rem;
     margin: 40px 0px;
     padding: 20px;
     box-shadow: 10px 10px 10px var(--secondary-color);
+    transition: 200ms;
 }
 
-#project-list li img {
+#project-list a:hover {
+    transform: scale(1.05);
+}
+
+#project-list img {
     background-color: var(--tertiary-color);
     border-radius: 8px;
     margin-top: 1rem;
@@ -268,7 +306,7 @@ main {
     object-fit: cover;
 }
 
-#project-list li a {
+#project-list p {
     background-color: var(--tertiary-color);
     color: var(--primary-color);
     font-size: 1.5rem;
