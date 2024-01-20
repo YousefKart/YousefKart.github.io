@@ -23,26 +23,41 @@
             <h2>YOUSEF KART</h2>
             <h3>Computer Science Student</h3>
             <ul class="home-list" id="home-info">
-                <li>
-                    <div class="home-list-bubble-connector-wrapper">
-                        <div class="home-list-bubble"></div>
-                    </div>
-                    <p>Game Developer</p>
-                </li>
-                <li>
-                    <div class="home-list-bubble-connector-wrapper">
-                        <div class="home-list-bubble"></div>
-                        <div class="home-list-connector"></div>
-                    </div>
-                    <p>Software Developer</p>
-                </li>
-                <li>
-                    <div class="home-list-bubble-connector-wrapper">
-                        <div class="home-list-bubble"></div>
-                        <div class="home-list-connector"></div>
-                    </div>
-                    <p>Web Developer</p>
-                </li>
+                <a href="#anchor-games">
+                    <li>
+                        <div class="home-list-bubble-connector-wrapper">
+                            <div class="home-list-bubble"></div>
+                        </div>
+                        <p>Game Developer</p>
+                    </li>
+                </a>
+                <a href="#anchor-apps">
+                    <li>
+                        <div class="home-list-bubble-connector-wrapper">
+                            <div class="home-list-bubble"></div>
+                            <div class="home-list-connector"></div>
+                        </div>
+                        <p>Software Developer</p>
+                    </li>
+                </a>
+                <a href="#anchor-web">
+                    <li>
+                        <div class="home-list-bubble-connector-wrapper">
+                            <div class="home-list-bubble"></div>
+                            <div class="home-list-connector"></div>
+                        </div>
+                        <p>Web Developer</p>
+                    </li>
+                </a>
+                <a href="#anchor-models">
+                    <li>
+                        <div class="home-list-bubble-connector-wrapper">
+                            <div class="home-list-bubble"></div>
+                            <div class="home-list-connector"></div>
+                        </div>
+                        <p>3D Modeller</p>
+                    </li>
+                </a>
             </ul>
         </div>
 
@@ -116,13 +131,6 @@
                     <ul class="skill-sub-list">
                         <li>
                             <div class="skill">
-                                <img width="48" height="48" src="https://img.icons8.com/fluency/48/blender-3d.png" alt="blender-3d" title="Blender"/>
-                                <div class="skill-wrapper"><div class="skill-bar"></div><div class="skill-level"></div></div>
-                            </div>
-                            <p>Perfect</p>
-                        </li>
-                        <li>
-                            <div class="skill">
                                 <img src="https://img.icons8.com/color/48/unity.png" alt="unity" title="Unity"/>
                                 <div class="skill-wrapper"><div class="skill-bar"></div><div class="skill-level skill-level-4"></div></div>
                             </div>
@@ -178,6 +186,13 @@
                     <ul class="skill-sub-list">
                         <li>
                             <div class="skill">
+                                <img width="48" height="48" src="https://img.icons8.com/fluency/48/blender-3d.png" alt="blender-3d" title="Blender"/>
+                                <div class="skill-wrapper"><div class="skill-bar"></div><div class="skill-level"></div></div>
+                            </div>
+                            <p>Perfect</p>
+                        </li>
+                        <li>
+                            <div class="skill">
                                 <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" title="HTML5"/>
                                 <div class="skill-wrapper"><div class="skill-bar"></div><div class="skill-level skill-level-4"></div></div>
                             </div>
@@ -225,65 +240,154 @@
 
         <div class="section" id="projects">
             <h2>PROJECTS</h2>
-            <div id="project-list" class="list">
-                <a class="link project-link" href="Projects\Live Sites\Greek Pitas\index.html">
+
+            <h3 id="anchor-games">Games</h3>
+            <div id="projects-game" class="project-list list">
+                <a class="link project-link" href="https://www.youtube.com/watch?v=1XG5x_ulwCk" target="_blank">
+                    <p>Escape Java</p>
+                    <img class="project-image" src="Images\escape-java.png" alt="Escape Java">
+                </a>
+                <a class="link project-link">
+                    <p>Take Cover</p>
+                    <img class="project-image" src="Images\take-cover.png" alt="Take Cover">
+                </a>
+                <a class="link project-link">
+                    <p>Frogger</p>
+                    <img class="project-image" src="Images\frogger.png" alt="Frogger">
+                </a>
+                <a class="link project-link">
+                    <p>Idle Island</p>
+                    <img class="project-image" src="Images\idle-island.png" alt="Idle Island">
+                </a>
+                <a class="link project-link">
+                    <p>Ocean Anarchy</p>
+                    <img class="project-image" src="Images\ocean-anarchy.png" alt="Ocean Anarchy">
+                </a>
+            </div>
+
+            <h3 id="anchor-apps">Applications</h3>
+            <div id="projects-software" class="project-list list">
+                <a class="link project-link" href="https://volt.borhansaflo.com/" target="_blank">
+                    <p>Volt Vista</p>
+                    <img style="object-fit: contain;" class="project-image" src="Images\volt-vista.png" alt="Volt Vista">
+                </a>
+                <a class="link project-link">
+                    <p>Space Paint</p>
+                    <img style="object-fit: contain;" class="project-image" src="Images\space-paint.png" alt="Space Paint">
+                </a>
+                <a class="link project-link">
+                    <p>Venturo Android App</p>
+                    <img class="project-image" src="Images\placeholder.png" alt="Venturo">
+                </a>
+            </div>
+
+            <h3 id="anchor-web">Web</h3>
+            <div id="projects-web" class="project-list list">
+                <a class="link project-link" href="Projects\Live Sites\Greek Pitas\index.html" target="_blank">
                     <p>Greek Pitas</p>
                     <img class="project-image" src="Images/gyro.jpg" alt="Greek Pitas">
                 </a>
-                <a class="link project-link" href="Projects/Side%20Sites/Coldar%20Academy/index.html">
+                <a class="link project-link" href="Projects/Side%20Sites/Coldar%20Academy/index.html" target="_blank">
                     <p>Coldar Academy</p>
-                    <img class="project-image" src="Projects\Side Sites\Coldar Academy\images\banner.jpg" alt="Coldar Academy">
+                    <img class="project-image" src="Images\placeholder.png" alt="Coldar Academy">
                 </a>
-                <a class="link project-link" href="Projects/Side%20Sites/Fotomatic/index.html">
+                <a class="link project-link" href="Projects/Side%20Sites/Fotomatic/index.html" target="_blank">
                     <p>Fotomatic</p>
-                    <img class="project-image" src="Projects\Side Sites\Fotomatic\resources\images\banner-landingpage.jpg" alt="Fotomatic">
+                    <img class="project-image" src="Images\placeholder.png" alt="Fotomatic">
                 </a>
-                <a class="link project-link" href="Projects/Side%20Sites/The%20Tea%20Cozy/index.html">
+                <a class="link project-link" href="Projects/Side%20Sites/The%20Tea%20Cozy/index.html" target="_blank">
                     <p>The Tea Cozy</p>
                     <img class="project-image" src="Projects\Side Sites\The Tea Cozy\images\img-mission-background.jpg" alt="The Tea Cozy">
                 </a>
+            </div>
+
+            <h3 id="anchor-models">3D Models</h3>
+            <div id="projects-3d" class="project-list list">
+
                 <a class="link project-link">
-                    <p>Coming Soon</p>
-                    <img class="project-image" src="Images\placeholder.png" alt="Placeholder">
+                    <p>Cafe</p>
+                    <img class="project-image" src="Images/Models/cafe-render.jpg" alt="Cafe">
                 </a>
                 <a class="link project-link">
-                    <p>Coming Soon</p>
-                    <img class="project-image" src="Images\placeholder.png" alt="Placeholder">
+                    <p>Curtiss Cb</p>
+                    <img class="project-image" src="Images/Models/curtiss-cb.png" alt="Curtiss Cb">
                 </a>
                 <a class="link project-link">
-                    <p>Coming Soon</p>
-                    <img class="project-image" src="Images\placeholder.png" alt="Placeholder">
+                    <p>Vehicles</p>
+                    <img class="project-image" src="Images/Models/low-poly-vehicles.png" alt="Vehicles">
                 </a>
                 <a class="link project-link">
-                    <p>Coming Soon</p>
-                    <img class="project-image" src="Images\placeholder.png" alt="Placeholder">
+                    <p>Coin Store</p>
+                    <img class="project-image" src="Images/Models/coin-store.png" alt="Coin Store">
                 </a>
                 <a class="link project-link">
-                    <p>Coming Soon</p>
-                    <img class="project-image" src="Images\placeholder.png" alt="Placeholder">
+                    <p>Sci-Fi Guns</p>
+                    <img class="project-image" src="Images/Models/low-poly-sci-fi-guns.png" alt="Sci-Fi Guns">
                 </a>
+                <a class="link project-link">
+                    <p>Car Wheel</p>
+                    <img class="project-image" src="Images/Models/s5-wheel.PNG" alt="Car Wheel">
+                </a>
+                <a class="link project-link">
+                    <p>Trees</p>
+                    <img class="project-image" src="Images/Models/low-poly-trees.png" alt="Trees">
+                </a>
+                <a class="link project-link">
+                    <p>Guns</p>
+                    <img class="project-image" src="Images/Models/low-poly-guns.png" alt="Guns">
+                </a>
+                <a class="link project-link">
+                    <p>Wooden Boats</p>
+                    <img class="project-image" src="Images/Models/boats.PNG" alt="Wooden Boats">
+                </a>
+                <a class="link project-link">
+                    <p>Military Helicopters</p>
+                    <img class="project-image" src="Images/Models/helicopters.PNG" alt="Military Helicopters">
+                </a>
+                <a class="link project-link">
+                    <p>Military Vehicles</p>
+                    <img class="project-image" src="Images/Models/military-vehicles.PNG" alt="Military Vehicles">
+                </a>
+                <a class="link project-link">
+                    <p>Star Wars Speeder</p>
+                    <img class="project-image" src="Images/Models/sw-speeder.PNG" alt="Star Wars Speeder">
+                </a>
+
             </div>
         </div>
 
+        <div id="main-shadow"></div>
+
         <div class="section" id="contact">
-            <h2>CONTACT</h2>
+            <h2></h2>
             <ul id="contact-list">
                 <li>
-                    <a href="https://www.linkedin.com/in/yousef-kart/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin"/></a>
+                    <a href="https://www.linkedin.com/in/yousef-kart/" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin"/>
+                        LinkedIn
+                    </a>
                 </li>
                 <li>
-                    <a href="https://github.com/YousefKart" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/></a>
+                    <a href="https://github.com/YousefKart" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/>
+                        GitHub
+                    </a>
                 </li>
                 <li>
-                    <img src="https://img.icons8.com/ios-filled/50/phone.png" alt="phone"/>
-                    <p>(519) 991-6921</p>
+                    <a href="tel:5199916921">
+                        <img src="https://img.icons8.com/ios-filled/50/phone.png" alt="phone"/>
+                        (519) 991-6921
+                    </a>
                 </li>
                 <li>
-                    <img src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post"/>
-                    <p>yousefkart21@gmail.com</p>
+                    <a href="mailto:yousefkart21@gmail.com">
+                        <img src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post"/>
+                        yousefkart21@gmail.com
+                    </a>
                 </li>
             </ul>
         </div>
+
     </main>
 
     <footer>
