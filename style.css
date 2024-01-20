@@ -68,7 +68,7 @@ nav {
 .navbar-list li a{
     text-decoration: none;
     margin: 0 1.75rem;
-    transition: 100ms;
+    transition-duration: 100ms;
 }
 
 .navbar-list li a:hover{
@@ -112,7 +112,7 @@ main {
     width: 26px;
     position: relative;
     top: 70px;
-    transition: 100ms;
+    transition-duration: 100ms;
 }
 
 .home-list > li:hover {
@@ -177,7 +177,7 @@ main {
 }
 
 #skills-list .skill-sub-list li p{
-    transition: 100ms;
+    transition-duration: 100ms;
 }
 
 #skills-list .skill-sub-list li:hover p{
@@ -290,7 +290,7 @@ main {
     margin: 40px 0px;
     padding: 20px;
     box-shadow: 10px 10px 10px var(--secondary-color);
-    transition: 200ms;
+    transition-duration: 200ms;
 }
 
 #project-list a:hover {
