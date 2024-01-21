@@ -112,6 +112,7 @@ main {
 .home-list {
     list-style: none;
     width: 90%;
+    margin-top: 50px;
 }
 
 .home-list a {
@@ -132,7 +133,7 @@ main {
 
 #home-info > a > li > p {
     position: relative;
-    top: 65%;
+    top: 50%;
     left: 10%;
     font-size: 1.5rem;
 }
@@ -143,12 +144,14 @@ main {
     height: 26px;
     width: 26px;
     position: relative;
-    top: 70px;
+    top: 55%;
     transition-duration: 150ms;
+    z-index: 10;
 }
 
 .home-list > a li p {
     transition-duration: 150ms;
+    height: 1.25rem;
 }
 
 .home-list > a li:hover .home-list-bubble {
@@ -158,6 +161,7 @@ main {
 
 .home-list > a li:hover p {
     color: var(--quaternary-color);
+    transform: scale(1.05);
 }
 
 
@@ -167,7 +171,7 @@ main {
     width: 4px;
     position: relative;
     left: 11px;
-    top: -32px;
+    top: -47%;
 }
 
 #skills {
@@ -396,13 +400,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     position: relative;
     top: -20px;
-}
-
-#contact-list li {
-    display: flex;
-    justify-content: center;
 }
 
 #contact-list li:hover a {

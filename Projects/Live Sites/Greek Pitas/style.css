@@ -25,10 +25,6 @@ body {
     transition: opacity 250ms ease-in, transform 500ms;
 }
 
-li.fade-in:nth-child(odd) {
-    transition-delay: 100ms;
-}
-
 .fade-in.appear{
     opacity: 1;
     transform: translateY(0%);
@@ -41,9 +37,9 @@ a {
 #background-image {
     position: absolute;
     top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 840px;
+    left: -10%;
+    width: 120%;
+    height: 850px;
     background-image: url(Images/Hero.jpg);
     background-size: cover;
     background-position: center;
