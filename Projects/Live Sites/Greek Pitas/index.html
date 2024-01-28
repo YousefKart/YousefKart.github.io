@@ -5,6 +5,7 @@
     <title>Greek Pitas</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="fade_in.js" defer></script>
+    <script src="popup.js" defer></script>
 </head>
 
 <body>
@@ -43,11 +44,11 @@
                 <h1 class="menu">Menu</h1>
             </div>
             <ul id="menu-list" class="menu">
-                <li class="menu fade-in"><img src="Images/Gyro.jpg">Pitas</li>
-                <li class="menu fade-in"><img src="Images/GyroDinner.jpg">Meals</li>
-                <li class="menu fade-in"><img src="Images/ChickenGreekSalad.jpg">Salads</li>
-                <li class="menu fade-in"><img src="Images/GreekPoutine.jpg">Appetizers</li>
-                <li class="menu fade-in"><img src="Images/MozzaSticks.jpg">Drinks & Sides</li>
+                <li class="menu fade-in popup-trigger"><img src="Images/Gyro.jpg">Pitas</li>
+                <li class="menu fade-in popup-trigger"><img src="Images/GyroDinner.jpg">Meals</li>
+                <li class="menu fade-in popup-trigger"><img src="Images/ChickenGreekSalad.jpg">Salads</li>
+                <li class="menu fade-in popup-trigger"><img src="Images/GreekPoutine.jpg">Appetizers</li>
+                <li class="menu fade-in popup-trigger"><img src="Images/MozzaSticks.jpg">Drinks & Sides</li>
             </ul>
 
             <div id="specials-container" class="title">
@@ -84,6 +85,16 @@
                 </li>
             </ul>
         </div>
+
+        <div id="overlay" class="hidden"></div>
+        <div id="popup-menu" class="popup hidden">
+            <div id="popup-menu-close" class="popup-close">x</div>
+            <div id="popup-menu-content">
+                <div id="popup-menu-title">Pitas</div>
+                <div id="popup-menu-list"></div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
