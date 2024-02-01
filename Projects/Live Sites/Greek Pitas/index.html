@@ -44,11 +44,11 @@
                 <h1 class="menu">Menu</h1>
             </div>
             <ul id="menu-list" class="menu">
-                <li class="menu fade-in popup-trigger"><img src="Images/Gyro.jpg">Pitas</li>
-                <li class="menu fade-in popup-trigger"><img src="Images/GyroDinner.jpg">Meals</li>
-                <li class="menu fade-in popup-trigger"><img src="Images/ChickenGreekSalad.jpg">Salads</li>
-                <li class="menu fade-in popup-trigger"><img src="Images/GreekPoutine.jpg">Appetizers</li>
-                <li class="menu fade-in popup-trigger"><img src="Images/MozzaSticks.jpg">Drinks & Sides</li>
+                <li id="pitas" class="menu fade-in popup-trigger"><img src="Images/Gyro.jpg">Pitas</li>
+                <li id="meals" class="menu fade-in popup-trigger"><img src="Images/GyroDinner.jpg">Meals</li>
+                <li id="salads" class="menu fade-in popup-trigger"><img src="Images/ChickenGreekSalad.jpg">Salads</li>
+                <li id="appetizers" class="menu fade-in popup-trigger"><img src="Images/GreekPoutine.jpg">Appetizers</li>
+                <li id="drinks-and-sides" class="menu fade-in popup-trigger"><img src="Images/MozzaSticks.jpg">Drinks & Sides</li>
             </ul>
 
             <div id="specials-container" class="title">
@@ -86,12 +86,275 @@
             </ul>
         </div>
 
-        <div id="overlay" class="hidden"></div>
-        <div id="popup-menu" class="popup hidden">
+        <div id="overlay-pitas" class="overlay hidden"></div>
+        <div id="popup-menu-pitas" class="popup hidden">
             <div id="popup-menu-close" class="popup-close">x</div>
             <div id="popup-menu-content">
-                <div id="popup-menu-title">Pitas</div>
-                <div id="popup-menu-list"></div>
+                <div id="popup-menu-title">
+                    <h1 id="popup-menu-title-text">Pitas</h1>
+                </div>
+                <ul id="popup-menu-list">
+                    <li>
+                        <dt class="popup-menu-item-name">Gyro</dt>
+                        <dd class="popup-menu-item-price">$7.99</dd>
+                        <dt class="popup-menu-item-description">Gyro meat, tzatziki sauce, tomatoes, onions</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Donair</p>
+                        <p class="popup-menu-item-price">$8.49</p>
+                        <dt class="popup-menu-item-description">Gyro meat, sweet sauce, tomatoes, onions</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Steak & Cheese</p>
+                        <p class="popup-menu-item-price">$8.49</p>
+                        <dt class="popup-menu-item-description">Philly steak, mayonaise, grilled onions, grilled mushrooms, lettuce, tomatoes</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Crispy Chicken</p>
+                        <p class="popup-menu-item-price">$8.49</p>
+                        <dt class="popup-menu-item-description">Crispy chicken, mayonaise, lettuce</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Chicken Delight</p>
+                        <p class="popup-menu-item-price">$7.99</p>
+                        <dt class="popup-menu-item-description">Grilled Chicken, delight sauce, lettuce, tomatoes, onions</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Chicken Club</p>
+                        <p class="popup-menu-item-price">$8.49</p>
+                        <dt class="popup-menu-item-description">Grilled Chicken, mozzerlla cheese, delight sauce, lettuce, tomatoes, onions</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Chicken Souvlaki</p>
+                        <p class="popup-menu-item-price">$7.99</p>
+                        <dt class="popup-menu-item-description">Grilled Chicken, tzatziki sauce, lettuce, tomatoes, onions</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Chicken Supreme</p>
+                        <p class="popup-menu-item-price">$7.99</p>
+                        <dt class="popup-menu-item-description">Grilled Chicken, tzatziki sauce, lettuce, tomatoes, grilled onions</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Chicken Caesar</p>
+                        <p class="popup-menu-item-price">$7.99</p>
+                        <dt class="popup-menu-item-description">Grilled Chicken, caesar sauce, lettuce</dt>
+                    </li>
+                    <li>
+                        <p class="popup-menu-item-name">Shrimp</p>
+                        <p class="popup-menu-item-price">$8.49</p>
+                        <dt class="popup-menu-item-description">Breaded shrimp, mayonaise, lettuce</dt>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="overlay-meals" class="overlay hidden"></div>
+        <div id="popup-menu-meals" class="popup hidden">
+            <div id="popup-menu-close" class="popup-close">x</div>
+            <div id="popup-menu-content">
+                <div id="popup-menu-title">
+                    <h1 id="popup-menu-title-text">Meals</h1>
+                </div>
+                <ul id="popup-menu-list">
+                    <li>
+                        <dt class="popup-menu-item-name">Dinner</dt>
+                        <dd class="popup-menu-item-price">$13.29</dd>
+                        <dt class="popup-menu-item-description">Any Pita, Salad, and Fries or Onion Rings</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Combo</dt>
+                        <dd class="popup-menu-item-price">$8.99</dd>
+                        <dt class="popup-menu-item-description">Any Burger and Fries or Onion Rings</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Combo</dt>
+                        <dd class="popup-menu-item-price">$11.49</dd>
+                        <dt class="popup-menu-item-description">Any Pita and Salad</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Combo</dt>
+                        <dd class="popup-menu-item-price">$11.49</dd>
+                        <dt class="popup-menu-item-description">Any Pita and Fries or Onion Rings</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Chicken Fingers</dt>
+                        <dd class="popup-menu-item-price">$10.99</dd>
+                        <dt class="popup-menu-item-description">4 Chicken Fingers and Large Fries</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Fish & Chips</dt>
+                        <dd class="popup-menu-item-price">$11.99</dd>
+                        <dt class="popup-menu-item-description">2 Fried Fish and Large Fries</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Burger</dt>
+                        <dd class="popup-menu-item-price">$5.99</dd>
+                        <dt class="popup-menu-item-description">Mayonaise, Ketchup, Lettuce, Tomatoes</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Cheese Burger</dt>
+                        <dd class="popup-menu-item-price">$6.99</dd>
+                        <dt class="popup-menu-item-description">Cheddar Cheese, Mayonaise, Ketchup, Tomatoes, Lettuce</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Chicken Burger</dt>
+                        <dd class="popup-menu-item-price">$5.99</dd>
+                        <dt class="popup-menu-item-description">Mayonaise, Lettuce</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Fish Burger</dt>
+                        <dd class="popup-menu-item-price">$5.99</dd>
+                        <dt class="popup-menu-item-description">Mayonaise, Lettuce</dt>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="overlay-salads" class="overlay hidden"></div>
+        <div id="popup-menu-salads" class="popup hidden">
+            <div id="popup-menu-close" class="popup-close">x</div>
+            <div id="popup-menu-content">
+                <div id="popup-menu-title">
+                    <h1 id="popup-menu-title-text">Salads</h1>
+                </div>
+                <ul id="popup-menu-list">
+                    <li>
+                        <dt class="popup-menu-item-name">Greek Salad</dt>
+                        <dd class="popup-menu-item-price">$6.49/$8.49</dd>
+                        <dt class="popup-menu-item-description">Lettuce, Tomatoes, Onion, Cucumber, Feta Cheese, Olive, Greek Dressing</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Caesar Salad</dt>
+                        <dd class="popup-menu-item-price">$4.99/$6.99</dd>
+                        <dt class="popup-menu-item-description">Lettuce, Croutons, Parmesan Cheese, Caesar Dressing</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Chicken Greek Salad</dt>
+                        <dd class="popup-menu-item-price">$10.49/$13.29</dd>
+                        <dt class="popup-menu-item-description">Greek Salad with Chicken Meat</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Chicken Caesar Salad</dt>
+                        <dd class="popup-menu-item-price">$10.49/$13.29</dd>
+                        <dt class="popup-menu-item-description">Caesar Salad with Chicken Meat</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Gyro Greek Salad</dt>
+                        <dd class="popup-menu-item-price">$10.49/$13.29</dd>
+                        <dt class="popup-menu-item-description">Greek Salad with Gyro Meat</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Falafel Greek Salad</dt>
+                        <dd class="popup-menu-item-price">$10.49/$13.29</dd>
+                        <dt class="popup-menu-item-description">Greek Salad with 6/12 Falafel Balls</dt>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="overlay-appetizers" class="overlay hidden"></div>
+        <div id="popup-menu-appetizers" class="popup hidden">
+            <div id="popup-menu-close" class="popup-close">x</div>
+            <div id="popup-menu-content">
+                <div id="popup-menu-title">
+                    <h1 id="popup-menu-title-text">Appetizers</h1>
+                </div>
+                <ul id="popup-menu-list">
+                    <li>
+                        <dt class="popup-menu-item-name">Fries</dt>
+                        <dd class="popup-menu-item-price">$5.49/$6.99</dd>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Onion Rings</dt>
+                        <dd class="popup-menu-item-price">$5.49/$6.99</dd>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Poutine</dt>
+                        <dd class="popup-menu-item-price">$6.49/$8.99</dd>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Greek Fries</dt>
+                        <dd class="popup-menu-item-price">$6.49/$8.99</dd>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Chicken Poutine</dt>
+                        <dd class="popup-menu-item-price">$10.49/$13.29</dd>
+                        <dt class="popup-menu-item-description">Poutine with Chicken Meat</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Chicken Greek Fries</dt>
+                        <dd class="popup-menu-item-price">$10.49/$13.29</dd>
+                        <dt class="popup-menu-item-description">Greek Fries with Chicken Meat</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Gyro Poutine</dt>
+                        <dd class="popup-menu-item-price">$10.49/$13.29</dd>
+                        <dt class="popup-menu-item-description">Poutine with Gyro Meat</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Gyro Greek Fries</dt>
+                        <dd class="popup-menu-item-price">$10.49/$13.29</dd>
+                        <dt class="popup-menu-item-description">Greek Fries with Gyro Meat</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Mozzarella ticks</dt>
+                        <dd class="popup-menu-item-price">$6.99</dd>
+                        <dt class="popup-menu-item-description">6 Pieces</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Jalepeno Poppers</dt>
+                        <dd class="popup-menu-item-price">$6.99</dd>
+                        <dt class="popup-menu-item-description">6 Pieces</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Breaded Mushrooms</dt>
+                        <dd class="popup-menu-item-price">$6.99</dd>
+                        <dt class="popup-menu-item-description">12 Pieces</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Falafel</dt>
+                        <dd class="popup-menu-item-price">$6.99</dd>
+                        <dt class="popup-menu-item-description">12 Pieces</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Grape Leaves</dt>
+                        <dd class="popup-menu-item-price">$4.99</dd>
+                        <dt class="popup-menu-item-description">8 Pieces</dt>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Spinach Pie</dt>
+                        <dd class="popup-menu-item-price">$6.99</dd>
+                        <dt class="popup-menu-item-description">Twisted Phylio with Spinach and Cheese</dt>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="overlay-drinks-and-sides" class="overlay hidden"></div>
+        <div id="popup-menu-drinks-and-sides" class="popup hidden">
+            <div id="popup-menu-close" class="popup-close">x</div>
+            <div id="popup-menu-content">
+                <div id="popup-menu-title">
+                    <h1 id="popup-menu-title-text">Drinks & Sides</h1>
+                </div>
+                <ul id="popup-menu-list">
+                    <li>
+                        <dt class="popup-menu-item-name">Pop</dt>
+                        <dd class="popup-menu-item-price">$1.33</dd>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Water</dt>
+                        <dd class="popup-menu-item-price">$1.33</dd>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Baklava</dt>
+                        <dd class="popup-menu-item-price">$2.49</dd>
+                    </li>
+                    <li>
+                        <dt class="popup-menu-item-name">Pita Bread</dt>
+                        <dd class="popup-menu-item-price">$1.79</dd>
+                    </li>
+                </ul>
             </div>
         </div>
 
