@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #1b1b1b;
+    --secondary-color: #282828;
+    --tertiary-color: #5ef5d4;
+}
+
+#course-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#course-table th, #course-table td {
+    border: 1px solid var(--tertiary-color);
+}
+
+#course-table th, #course-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+#course-table th {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+#course-table td {
+    text-align: center;
+}
+
+#course-table tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+#course-table tr:hover {
+    background-color: var(--tertiary-color);
+}
+
+#course-table tr:hover td {
+    color: var(--primary-color);
+    font-weight: bold;
+}

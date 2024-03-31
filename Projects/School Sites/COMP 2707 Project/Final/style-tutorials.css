@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #1b1b1b;
+    --secondary-color: #282828;
+    --tertiary-color: #5ef5d4;
+}
+
+.tutorial-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.tutorial-block {
+    display: inline-flex;
+    width: 100%;
+    margin: 2rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tutorial-block h2 {
+    margin: 1rem 0;
+}
+
+.tutorial-block img {
+    width: 40%;
+    height: max(20vh, 400px);
+    object-fit: cover;
+}
+
+#tutorial-section li:nth-child(odd) .tutorial-block{
+    flex-direction: row-reverse;
+}
+
+hr {
+    width: 100%;
+    flex-grow: 1;
+    border-color: var(--tertiary-color);
+}
+
+.tutorial-info {
+    width: 50%;
+    padding: 2rem;
+}
+
+#search-bar {
+    width: 100%;
+}
+
+input {
+    width: 20%;
+    padding: 0.2rem;
+    margin: 1rem 0;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    padding: 0.4rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-bar hr {
+    margin-top: 1rem;
+}
