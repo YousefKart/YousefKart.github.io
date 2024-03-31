@@ -1,13 +1,13 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "post") {
     $data = json_decode(file_get_contents("php://input"), true);
 
     $name = $data["name"];
     $email = $data["email"];
     $message = $data["message"];
 
-    $to = "brosefftw@gmail.com";
+    $to = "karty@uwindsor.ca";
     $subject = "Feedback from Computer Science Hub";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
 

@@ -15,7 +15,7 @@ form {
 
 input, textarea {
     width: 15%;
-    margin: 1rem;
+    margin: 0.5rem 1rem 1.5rem 1rem;
     padding: 0.5rem;
     border: none;
     border-radius: 0.5rem;
@@ -28,9 +28,16 @@ textarea {
     width: 30%;
 }
 
+@media screen and (max-width: 1400px) {
+    input, textarea {
+        width: 40%;
+    }
+    
+}
+
 button {
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     border: none;
     border-radius: 0.5rem;
     background-color: var(--tertiary-color);

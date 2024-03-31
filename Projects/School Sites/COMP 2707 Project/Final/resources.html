@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-resources.css">
     <title>Computer Science Hub</title>
 </head>
 <body>
@@ -21,7 +22,52 @@
 
     <main>
         <section id="resources-section">
-            <h1>Course Resources</h1>
+            <h1>Resources</h1>
+
+            <ul id="resource-list">
+                <li class="resource-block">
+                    <h2>Web Development</h2>
+                    <p>Learn how to build websites from scratch using HTML, CSS, and JavaScript.</p>
+                    <a href="https://www.w3schools.com/">W3Schools</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a>
+                    <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+                </li>
+                <li class="resource-block">
+                    <h2>Python Programming</h2>
+                    <p>Learn the basics of Python programming and start building your own projects.</p>
+                    <a href="https://www.python.org/">Python.org</a>
+                    <a href="https://www.learnpython.org/">LearnPython.org</a>
+                    <a href="https://realpython.com/">Real Python</a>
+                </li>
+                <li class="resource-block">
+                    <h2>Data Science</h2>
+                    <p>Explore the world of data science and learn how to analyze and visualize data.</p>
+                    <a href="https://www.kaggle.com/">Kaggle</a>
+                    <a href="https://www.datacamp.com/">DataCamp</a>
+                    <a href="https://towardsdatascience.com/">Towards Data Science</a>
+                </li>
+                <li class="resource-block">
+                    <h2>Algorithms and Data Structures</h2>
+                    <p>Master the fundamentals of algorithms and data structures to become a better programmer.</p>
+                    <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
+                    <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript">HackerRank</a>
+                    <a href="https://leetcode.com/">LeetCode</a>
+                </li>
+                <li class="resource-block">
+                    <h2>Computer Science Books</h2>
+                    <p>Discover a collection of recommended books on computer science topics.</p>
+                    <a href="https://www.amazon.com/Best-Sellers-Books-Computer-Science/zgbs/books/3508">Amazon Best Sellers</a>
+                    <a href="https://www.goodreads.com/shelf/show/computer-science">Goodreads</a>
+                    <a href="https://www.springer.com/gp/computer-science">Springer Computer Science</a>
+                </li>
+            </ul>
+
+            <form action="fileUpload.php" method="post" enctype="multipart/form-data">
+                <h2>Upload</h2>
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <button type="submit" name="submit">Upload File</button>
+            </form>
+            
         </section>
     </main>
 

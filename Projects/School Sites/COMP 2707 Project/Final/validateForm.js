@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const message = document.getElementById("message").value.trim();
 
         if (name === "" || email === "" || message === "") {
-            alert("Please fill in all fields.");
+            alert("Please fill all fields.");
             return;
         }
 
@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // If all validations pass, submit the form
         submitForm(name, email, message);
     });
 
@@ -28,8 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function submitForm(name, email, message) {
-        // You can send the data to a PHP script using AJAX
-        // Here's a basic example using Fetch API
         fetch("sendEmail.php", {
             method: "POST",
             headers: {
