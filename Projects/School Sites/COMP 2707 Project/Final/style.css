@@ -88,6 +88,7 @@ nav ul li {
 
 a {
     text-decoration: none;
+    transition-duration: 300ms;
 }
 
 a:visited {

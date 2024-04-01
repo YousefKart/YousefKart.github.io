@@ -21,11 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         submitForm(name, email, message);
     });
 
-    function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-
     function submitForm(name, email, message) {
         fetch("sendEmail.php", {
             method: "POST",
@@ -35,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             body: JSON.stringify({ name, email, message }),
         })
             .then((response) => {
-                if (!response.ok) {
+                if (response.ok) {
                     throw new Error("Failed to send message.");
                 }
                 alert("Message sent successfully!");
@@ -44,5 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch((error) => {
                 alert(error.message);
             });
+    }
+
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
     }
 });
